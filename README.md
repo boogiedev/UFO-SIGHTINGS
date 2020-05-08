@@ -48,7 +48,7 @@ SOURCE             | TIMEFRAME
 :-------------------------:|:-------------------------:|
 ![NUFORC](http://www.nuforc.org/)  | MAY 10th 2017  
 
-<img align="right" src="https://raw.githubusercontent.com/boogiedev/UFO-SIGHTINGS/master/media/nuforc.PNG">
+<img align="right" src="https://raw.githubusercontent.com/boogiedev/UFO-SIGHTINGS/master/media/nuforc.PNG"></img>
 
 The specific data that we are focusing on today are U.F.O. reports from May 10th, 2017, with a total of 99 sightings. Below is a preview of the format that the data comes in from the website.
 
