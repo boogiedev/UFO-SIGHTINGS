@@ -1,9 +1,8 @@
 ![NLP Header](https://github.com/boogiedev/UFO-SIGHTINGS/blob/master/media/ufo-header.png)
 
 <p align="center">
-  
   <img src="https://img.shields.io/badge/Maintained%3F-IN PROG-blue?style=flat-square"></img>
-  <img src="https://img.shields.io/github/commit-activity/m/boogiedev/UFO-SIGHTINGS?style=flat-square">
+  <img src="https://img.shields.io/github/commit-activity/m/boogiedev/UFO-SIGHTINGS?style=flat-square"></img>
 </p>
 
 
@@ -61,7 +60,7 @@ Here is a detailed description of the intake data:
 
 
 
-### Feature Engineering
+### Feature Engineering / Data Cleaning
 
 Fill
 
@@ -69,15 +68,13 @@ Fill
 ---
 ## Language Processing
 
-Fill
-
 ### Tokenizing
 
 Fill
 
 ## Future Considerations
 
-Using NaieveBayes to test comminalities
+Using NaieveBayes to test comminalities of words used to derive if these occurences are related.
 
 
 Do the U.F.O. sightings have a similar distribution of reports from states?
