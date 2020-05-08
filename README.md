@@ -1,9 +1,9 @@
 ![NLP Header](https://github.com/boogiedev/UFO-SIGHTINGS/blob/master/media/ufo-header.png)
 
 <p align="center">
+  
   <img src="https://img.shields.io/badge/Maintained%3F-IN PROG-blue?style=flat-square"></img>
-<!--   <img src="https://img.shields.io/github/commit-activity/m/boogiedev/churning-a-blind-eye?style=flat-square"> -->
-<!--   <img src="https://img.shields.io/github/license/boogiedev/churning-a-blind-eye?style=flat-square"> -->
+  <img src="https://img.shields.io/github/commit-activity/m/boogiedev/UFO-SIGHTINGS?style=flat-square">
 </p>
 
 
