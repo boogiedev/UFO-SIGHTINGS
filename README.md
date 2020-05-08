@@ -39,6 +39,8 @@ It's a bird... it's a plane...it's... a U.F.O. sighting? Over the course of huma
 
 Using Natural Language Processing, we are hoping to parse through these sighting reports and explore possible commonalities, insights, and sentiment about these suspicious objects. By doing this, we are hoping to gain a more concrete truth of whether these sightings are figments of people's imaginations, or that there might be actually be an alien overlord visiting us from time to time.
 
+> If reports from Alabama mention that this mysterious "object" has the shape of a rectangle, while reports from other states express the same thing, is it possible to make a connection here?  
+
 
 ## Exploring Data
 
