@@ -39,7 +39,9 @@ It's a bird... it's a plane...it's... a U.F.O. sighting? Over the course of huma
 
 Using Natural Language Processing, we are hoping to parse through these sighting reports and explore possible commonalities, insights, and sentiment about these suspicious objects. By doing this, we are hoping to gain a more concrete truth of whether these sightings are figments of people's imaginations, or that there might be actually be an alien overlord visiting us from time to time.
 
-> If reports from Alabama mention that this mysterious "object" has the shape of a rectangle, while reports from other states express the same thing, is it possible to make a connection here?  
+> If reports from Alabama mention that this mysterious "object" has the shape of a rectangle, while reports from other states express the same thing, is it possible to make a connection here?
+
+
 
 
 ## Exploring Data
@@ -59,10 +61,10 @@ The specific data that we are focusing on today are U.F.O. reports from May 10th
 ### Initial Intake
 
 Here is a detailed description of the intake data:
-- `_id/$oid`: city this user signed up in phone: primary device for this user
-- `url`: date of account registration; in the form `YYYYMMDD`
-- `html`: the last time this user completed a trip; in the form `YYYYMMDD`
-- `time`: the average distance (in miles) per trip taken in the first 30 days after signup
+- `ID`: Report ID
+- `url`: Report URL
+- `html`: Raw HTML from report
+- `time`: Date Time Object of the report
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/boogiedev/UFO-SIGHTINGS/master/media/dfbefore.PNG"></img>
@@ -108,7 +110,20 @@ def clean_data(data:pd.DataFrame) -> pd.DataFrame:
     return df_copy
 ```
 
-We ended up 
+We ended up parsing the data in the 'HTML' rows of our dataframe in order to extract useful information, using the cleaner function above we succesfully created new columns. The resule of this are below:
+
+- `ID`: Report ID
+- `url`: Report URL
+- `html`: Raw HTML from report
+- `time`: Date Time Object of the report
+- `state`: Reported Location
+- `content`: Content of the report
+- `shape`: Alleged Shape of the UFO
+- `duration`: Duration of the report sighting
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/boogiedev/UFO-SIGHTINGS/master/media/dfafter.PNG"></img>
+</p>
 
 
 ---
