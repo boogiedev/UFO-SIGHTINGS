@@ -1,9 +1,9 @@
 ![NLP Header](https://github.com/boogiedev/UFO-SIGHTINGS/blob/master/media/ufo-header.png)
 
 <p align="center">
+  
   <img src="https://img.shields.io/badge/Maintained%3F-IN PROG-blue?style=flat-square"></img>
-<!--   <img src="https://img.shields.io/github/commit-activity/m/boogiedev/churning-a-blind-eye?style=flat-square"> -->
-<!--   <img src="https://img.shields.io/github/license/boogiedev/churning-a-blind-eye?style=flat-square"> -->
+  <img src="https://img.shields.io/github/commit-activity/m/boogiedev/UFO-SIGHTINGS?style=flat-square">
 </p>
 
 
@@ -16,7 +16,8 @@
 ## Table of Contents
 
 - [Basic Overview](#basic-overview)
-  - [Context](#Context)
+  - [Context](#context)
+  - [Goal](#goal)
 - [Exploring Data](#exploring-data)
   - [Initial Intake](#initial-intake)
   - [Feature Engineering](#feature-engineering)
@@ -33,8 +34,11 @@
 
 <img align="right" src="https://i.pinimg.com/236x/32/47/16/324716a77ab7183025a1ad46786de375--x-files-funny-love-puns.jpg">
 
-It's a bird... it's a plane...it's... a U.F.O. sighting? Over the course of human history U.F.O. sightings seem to be commonplace; commonly described as "flying saucers", strange lights and objects or straight up "Aliens". There are a lot of unknowns that surround the idea of unidentified flying objects, but one thing that is known, are that people are continually fascinated by them. Today, we are looking at reported U.F.O. sightings from ![THE NATIONAL UFO REPORTING CENTER](http://www.nuforc.org/). 
+It's a bird... it's a plane...it's... a U.F.O. sighting? Over the course of human history U.F.O. sightings seem to be commonplace; commonly described as "flying saucers", strange lights and objects or straight up "Aliens". There are a lot of unknowns that surround the idea of unidentified flying objects, but one thing that is known, are that people are continually fascinated by them. Today, we are looking at reported U.F.O. sightings from ![THE NATIONAL UFO REPORTING CENTER](http://www.nuforc.org/). These are anonymous reports from various people all over the U.S. and sometimes even internationally.
 
+### Goal
+
+Using Natural Language Processing, we are hoping to parse through these sighting reports and explore possible commonalities, insights, and sentiment about these suspicious objects. By doing this, we are hoping to gain a more concrete truth of whether these sightings are figments of people's imaginations, or that there might be actually be an alien overlord visiting us from time to time.
 
 
 ## Exploring Data
@@ -43,7 +47,7 @@ Source             |
 :-------------------------:|
 ![NUFORC](http://www.nuforc.org/)  |  
 
-Fill
+
 
 ### Initial Intake
 
