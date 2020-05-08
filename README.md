@@ -168,6 +168,23 @@ Changes in Vocabulary Size Per Minimum Document Frequency:
 
 ```
 
+Document Frequencies at Minimum of 0.5
+
+```python
+# See words with a high frequency threshhold 50%
+thresh = 0.5
+for word, freq in doc_freq.items():
+    if freq >= thresh:
+        print(f"{word}:  {freq}")
+
+```
+```
+light:  0.6767676767676768
+look:  0.5252525252525253
+sky:  0.5656565656565656
+saw:  0.5151515151515151
+move:  0.5858585858585859
+```
 
 ### Tokenizing
 
