@@ -1,4 +1,4 @@
-![NLP Header](https://github.com/boogiedev/UFO-or-Bigfoot/blob/Seattle/media/ufo-header.png)
+![NLP Header](https://github.com/boogiedev/UFO-SIGHTINGS/blob/master/media/ufo-header.png)
 
 <p align="center">
   <img src="https://img.shields.io/badge/Maintained%3F-IN PROG-blue?style=flat-square"></img>
