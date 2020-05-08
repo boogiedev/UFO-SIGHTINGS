@@ -43,10 +43,11 @@ Using Natural Language Processing, we are hoping to parse through these sighting
 
 ## Exploring Data
 
-Source             |  
-:-------------------------:|
-![NUFORC](http://www.nuforc.org/)  |  
+SOURCE             | TIMEFRAME 
+:-------------------------:|:-------------------------:|
+![NUFORC](http://www.nuforc.org/)  | MAY 10th 2017  
 
+The specific data that we are focusing on today are U.F.O. reports from May 10th, 2017, with a total of 99 sightings.
 
 
 ### Initial Intake
@@ -56,6 +57,8 @@ Here is a detailed description of the intake data:
 - `url`: date of account registration; in the form `YYYYMMDD`
 - `html`: the last time this user completed a trip; in the form `YYYYMMDD`
 - `time`: the average distance (in miles) per trip taken in the first 30 days after signup
+
+
 
 
 ### Feature Engineering
@@ -74,7 +77,11 @@ Fill
 
 ## Future Considerations
 
-Fill
+Using NaieveBayes to test comminalities
+
+
+Do the U.F.O. sightings have a similar distribution of reports from states?
+
 
 ## License
 [MIT ©](https://choosealicense.com/licenses/mit/)
