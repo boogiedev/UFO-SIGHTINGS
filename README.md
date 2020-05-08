@@ -25,8 +25,7 @@
   - [Tokenizing](#tokenizing)
 - [Future Considerations](#future-considerations)
 - [License](#license)
-- [Credits](#credits)
-- [Thanks](#thanks)
+
 
 ## Basic Overview
 
@@ -177,10 +176,3 @@ Do the U.F.O. sightings have a similar distribution of reports from states?
 ## License
 [MIT ©](https://choosealicense.com/licenses/mit/)
 
-## Credits
-
-Fill
-
-## Thanks
-
-Fill
