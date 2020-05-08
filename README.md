@@ -73,7 +73,7 @@ Here is a detailed description of the intake data:
 
 Looking at this data, we noticed that there were a couple things that could be cleaned and changed. 
 
-```
+```python
 def clean_data(data:pd.DataFrame) -> pd.DataFrame:
     """Cleaner for UFO DataFrame"""
     # Copy data to avoid collision
