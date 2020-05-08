@@ -52,6 +52,7 @@ SOURCE             | TIMEFRAME
 
 The specific data that we are focusing on today are U.F.O. reports from May 10th, 2017, with a total of 99 sightings. Below is a preview of the format that the data comes in from the website.
 
+<br/>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/boogiedev/UFO-SIGHTINGS/master/media/dataexcerpt.PNG"></img>
