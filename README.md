@@ -44,9 +44,9 @@ Using Natural Language Processing, we are hoping to parse through these sighting
 
 ## Exploring Data
 
-SOURCE             | TIMEFRAME 
-:-------------------------:|:-------------------------:|
-![NUFORC](http://www.nuforc.org/)  | MAY 10th 2017  
+SOURCE             | TIMEFRAME | N_RECORDS
+:-------------------------:|:-------------------------:|:-------------------------:|
+![NUFORC](http://www.nuforc.org/)  | MAY 10th 2017 |  100
 
 <img align="right" src="https://raw.githubusercontent.com/boogiedev/UFO-SIGHTINGS/master/media/nuforc.PNG"></img>
 
