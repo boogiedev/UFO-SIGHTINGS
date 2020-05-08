@@ -6,7 +6,7 @@
 </p>
 
 
-## Team X Æ A-12
+## Team X Æ A-12 (*X Ash A Twelve*)
 
 [Tyler Woods](https://github.com/tylerjwoods)  | [Joseph Shanks](https://github.com/josephshanks) | [Wesley Nguyen](https://github.com/boogiedev)
 ---|---|---|
