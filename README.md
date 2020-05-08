@@ -21,6 +21,7 @@
   - [Initial Intake](#initial-intake)
   - [Feature Engineering](#feature-engineering)
 - [Language Processing](#language-processing)
+  - [Visualizations](#visualizations)
   - [Tokenizing](#tokenizing)
 - [Future Considerations](#future-considerations)
 - [License](#license)
@@ -128,6 +129,27 @@ We ended up parsing the data in the 'HTML' rows of our dataframe in order to ext
 
 ---
 ## Language Processing
+
+### Visualizations
+
+Choropleth Map: 
+
+> The choropleth map shown in the notebook 'choropleth_map.ipynb' shows the number of reports from each state in the time period, as well as the three most common words from those reports of each state.
+With this information, we see a detailed image of where the reports are coming from and what the reports are talking about.
+15:51
+
+Observed UFO Shapes:
+
+The bar chart shows what the most common shapes are in the reports. We can see that 'Circles' and 'Teardrops' are common shapes, as well as individuals reporting just seeing 'Light'.
+
+
+<p align="center">
+  <img src="https://github.com/boogiedev/UFO-SIGHTINGS/blob/master/media/observed_ufo_shapes.png?raw=true"></img>
+</p>
+
+
+
+
 
 ### Tokenizing
 
