@@ -153,7 +153,18 @@ The bar chart shows what the most common shapes are in the reports. We can see t
 
 ### Tokenizing
 
-Fill
+After creating our stop words list and removing punctuations we tokenized our documents. “Tokenize” means creating “tokens” which are atomic units of the text. These tokens are words extracted by splitting the document.We then used the “SnowballStemmer” to stem our tokenized words. We decided to use the snowball stemmer over the WordNetLemmatizer or the PorterStemmer. The reason for this is show below. 
+
+```python
+## Print the stemmed and lemmatized words from the first document
+print(“%16s | %16s | %16s | %16s |” % (“WORD”, “PORTER”, “SNOWBALL”, “LEMMATIZER”))
+for i in range(min(len(docs_porter[0]), len(docs_snowball[0]), len(docs_wordnet[0]))):
+  p, s, w = docs_porter[0][i], docs_snowball[0][i], docs_wordnet[0][i]
+  if len(set((p, s, w))) != 1:
+    print(“%16s | %16s | %16s | %16s |” % (doc_filter[0][i], p, s, w))
+```
+    
+We chose to stem the words with the Snowball Stemmer due to its preservation of important words for this usecase such as ‘venus’The Snowball Stemmmer normalizes these words from its appeared form into their root form.We now have our list of clean tokens for each document! We turned this into a pandas Series to compute the TF-IDF
 
 ## Future Considerations
 
