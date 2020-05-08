@@ -144,8 +144,25 @@ The bar chart shows what the most common shapes are in the reports. We can see t
   <img src="https://github.com/boogiedev/UFO-SIGHTINGS/blob/master/media/observed_ufo_shapes.png?raw=true"></img>
 </p>
 
+Changes in Vocabulary Size Per Minimum Document Frequency:
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/boogiedev/UFO-SIGHTINGS/master/media/mindf.PNG"></img>
+</p>
 
+```
+0.1 -- vocabulary (len=157): ['light', 'look', 'nuforc', 'helicopt', 'first', 'bright', 'pd', 'disappear', 'way', 'went', 'sight', 'report', 'seen', 'us', 'one', 'like', 'east', 'appear', 'note', 'hover', 'could', 'sky', 'provid', 'elect', 'stationari', 'star', 'inform', 'anonym', 'contact', 'remain', 'sourc', 'travel', 'notic', 'fli', 'someth', 'approxim', 'clear', 'see', 'would', 'wit', 'sound', 'come', 'direct', 'near', 'craft', 'saw', 'west', 'air', 'north', 'feet', 'object', 'tree', 'mayb', 'shape', 'side', 'view', 'size', 'orang', 'circl', 'never', 'hous', 'gone', 'pass', 'time', 'seem', 'move', 'low', 'almost', 'straight', 'white', 'plane', 'still', 'anoth', 'know', 'quick', 'toward', 'made', 'outsid', 'normal', 'stop', 'make', 'flash', 'mile', 'distanc', 'high', 'insid', 'chang', 'thought', 'go', 'minut', 'back', 'second', 'watch', 'show', 'around', 'two', 'ball', 'even', 'away', 'night', 'south', 'thing', 'came', 'point', 'color', 'end', 'green', 'complet', 'take', 'drive', 'reflect', 'window', 'line', 'nois', 'noth', 'ufo', 'blue', 'left', 'speed', 'red', 'behind', 'live', 'area', 'aircraft', 'get', 'slowli', 'head', 'flew', 'glow', 'across', 'right', 'slow', 'phone', 'fast', 'also', 'larg', 'home', 'cloud', 'big', 'tri', 'photo', 'indic', 'turn', 'video', 'three', 'got', 'eye', 'float', 'moon', 'face', 'street', 'later', 'front', 'observ', 'start', 'visibl', 'think']
+0.2 -- vocabulary (len=54): ['light', 'look', 'nuforc', 'first', 'bright', 'pd', 'disappear', 'went', 'sight', 'report', 'seen', 'one', 'like', 'east', 'appear', 'note', 'could', 'sky', 'provid', 'elect', 'inform', 'anonym', 'contact', 'remain', 'sourc', 'notic', 'see', 'would', 'wit', 'sound', 'direct', 'craft', 'saw', 'west', 'object', 'shape', 'time', 'seem', 'move', 'white', 'plane', 'still', 'stop', 'thought', 'go', 'minut', 'back', 'second', 'watch', 'around', 'two', 'night', 'south', 'get']
+0.3 -- vocabulary (len=15): ['light', 'look', 'nuforc', 'bright', 'pd', 'report', 'one', 'like', 'note', 'could', 'sky', 'see', 'saw', 'object', 'move']
+0.4 -- vocabulary (len=10): ['light', 'look', 'nuforc', 'pd', 'like', 'note', 'sky', 'saw', 'object', 'move']
+0.5 -- vocabulary (len=5): ['light', 'look', 'sky', 'saw', 'move']
+0.6 -- vocabulary (len=1): ['light']
+0.7 -- vocabulary (len=0): []
+0.8 -- vocabulary (len=0): []
+0.9 -- vocabulary (len=0): []
+1.0 -- vocabulary (len=0): []
+
+```
 
 
 ### Tokenizing
