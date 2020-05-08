@@ -33,7 +33,7 @@
 
 <img align="right" src="https://i.pinimg.com/236x/32/47/16/324716a77ab7183025a1ad46786de375--x-files-funny-love-puns.jpg">
 
-It's a bird... it's a plane...it's... a U.F.O. sighting? Over the course of human history U.F.O. sightings seem to be commonplace; commonly described as "flying saucers", strange lights and objects or straight up "Aliens". There are a lot of unknowns that surround the idea of unidentified flying objects, but one thing that is known, are that people are continually fascinated by them. Today, we are looking at reported U.F.O. sightings from ![THE NATIONAL UFO REPORTING CENTER](http://www.nuforc.org/). These are anonymous reports from various people all over the U.S. and sometimes even internationally.
+It's a bird... it's a plane...it's... a U.F.O. sighting? Over the course of human history U.F.O. sightings seem to be commonplace; commonly described as "flying saucers", strange lights and objects or straight up "Aliens". There are a lot of unknowns that surround the idea of unidentified flying objects, but one thing that is known, are that people are continually fascinated by them. Today, we are looking at reported U.F.O. sightings from ![THE NATIONAL UFO REPORTING CENTER](http://www.nuforc.com/). These are anonymous reports from various people all over the U.S. and sometimes even internationally.
 
 ### Goal
 
@@ -46,7 +46,7 @@ Using Natural Language Processing, we are hoping to parse through these sighting
 
 SOURCE             | TIMEFRAME 
 :-------------------------:|:-------------------------:|
-![NUFORC](http://www.nuforc.org/)  | MAY 10th 2017  
+![NUFORC](http://www.nuforc.com/)  | MAY 10th 2017  
 
 The specific data that we are focusing on today are U.F.O. reports from May 10th, 2017, with a total of 99 sightings. Below is a preview of the format that the data comes in from the website.
 
