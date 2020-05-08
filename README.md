@@ -205,7 +205,7 @@ for i in range(min(len(docs_porter[0]), len(docs_snowball[0]), len(docs_wordnet[
 
 ```
 
-We chose to stem the words with the Snowball Stemmer due to its preservation of important words for this usecase such as ‘venus’The Snowball Stemmmer normalizes these words from its appeared form into their root form.We now have our list of clean tokens for each document! We turned this into a pandas Series to compute the TF-IDF
+We chose to stem the words with the Snowball Stemmer due to its preservation of important words for this usecase such as ‘venus’. The Snowball Stemmmer normalizes these words from its appeared form into their root form. We now have our list of clean tokens for each document! We turned this into a pandas Series to compute the TF-IDF
 
 ## Future Considerations
 
