@@ -83,7 +83,6 @@ def clean_data(data:pd.DataFrame) -> pd.DataFrame:
     # Copy data to avoid collision
     df_copy = data.copy()
     
-    
     # Rename ID Column for Clarity
     df_copy.columns.values[0] = 'ID'
     
