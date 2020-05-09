@@ -21,8 +21,8 @@
   - [Initial Intake](#initial-intake)
   - [Feature Engineering](#feature-engineering)
 - [Language Processing](#language-processing)
-  - [Visualizations](#visualizations)
   - [Tokenizing](#tokenizing)
+  - [Visualizations](#visualizations)
 - [Future Considerations](#future-considerations)
 - [License](#license)
 
@@ -131,6 +131,49 @@ We ended up parsing the data in the 'HTML' rows of our dataframe in order to ext
 ---
 ## Language Processing
 
+### Tokenizing
+
+After creating our stop words list and removing punctuations we tokenized our documents. “Tokenize” means creating “tokens” which are atomic units of the text. These tokens are words extracted by splitting the document.We then used the “SnowballStemmer” to stem our tokenized words. We decided to use the snowball stemmer over the WordNetLemmatizer or the PorterStemmer. The reason for this is show below. 
+
+```python
+
+porter = PorterStemmer()
+snowball = SnowballStemmer('english')
+wordnet = WordNetLemmatizer()
+
+docs_porter = [[porter.stem(word) for word in words]
+               for words in doc_filter]
+docs_snowball = [[snowball.stem(word) for word in words]
+                 for words in doc_filter]
+docs_wordnet = [[wordnet.lemmatize(word) for word in words]
+                for words in doc_filter]
+
+
+## Print the stemmed and lemmatized words from the first document
+print(“%16s | %16s | %16s | %16s |” % (“WORD”, “PORTER”, “SNOWBALL”, “LEMMATIZER”))
+for i in range(min(len(docs_porter[0]), len(docs_snowball[0]), len(docs_wordnet[0]))):
+  p, s, w = docs_porter[0][i], docs_snowball[0][i], docs_wordnet[0][i]
+  if len(set((p, s, w))) != 1:
+    print(“%16s | %16s | %16s | %16s |” % (doc_filter[0][i], p, s, w))
+```
+```
+            WORD |           PORTER |         SNOWBALL |       LEMMATIZER |
+         hovered |            hover |            hover |          hovered |
+          looked |             look |             look |           looked |
+      helicopter |         helicopt |         helicopt |       helicopter |
+          stayed |             stay |             stay |           stayed |
+     disappeared |        disappear |        disappear |      disappeared |
+         appears |           appear |           appear |          appears |
+              us |               us |               us |                u |
+      consistent |          consist |          consist |       consistent |
+        sighting |            sight |            sight |         sighting |
+           venus |             venu |            venus |            venus |
+
+```
+
+We chose to stem the words with the Snowball Stemmer due to its preservation of important words for this usecase such as ‘venus’. The Snowball Stemmmer normalizes these words from its appeared form into their root form. We now have our list of clean tokens for each document! We turned this into a pandas Series to compute the TF-IDF
+
+
 ### Visualizations
 
 Choropleth Map: 
@@ -186,47 +229,6 @@ saw:  0.5151515151515151
 move:  0.5858585858585859
 ```
 
-### Tokenizing
-
-After creating our stop words list and removing punctuations we tokenized our documents. “Tokenize” means creating “tokens” which are atomic units of the text. These tokens are words extracted by splitting the document.We then used the “SnowballStemmer” to stem our tokenized words. We decided to use the snowball stemmer over the WordNetLemmatizer or the PorterStemmer. The reason for this is show below. 
-
-```python
-
-porter = PorterStemmer()
-snowball = SnowballStemmer('english')
-wordnet = WordNetLemmatizer()
-
-docs_porter = [[porter.stem(word) for word in words]
-               for words in doc_filter]
-docs_snowball = [[snowball.stem(word) for word in words]
-                 for words in doc_filter]
-docs_wordnet = [[wordnet.lemmatize(word) for word in words]
-                for words in doc_filter]
-
-
-## Print the stemmed and lemmatized words from the first document
-print(“%16s | %16s | %16s | %16s |” % (“WORD”, “PORTER”, “SNOWBALL”, “LEMMATIZER”))
-for i in range(min(len(docs_porter[0]), len(docs_snowball[0]), len(docs_wordnet[0]))):
-  p, s, w = docs_porter[0][i], docs_snowball[0][i], docs_wordnet[0][i]
-  if len(set((p, s, w))) != 1:
-    print(“%16s | %16s | %16s | %16s |” % (doc_filter[0][i], p, s, w))
-```
-```
-            WORD |           PORTER |         SNOWBALL |       LEMMATIZER |
-         hovered |            hover |            hover |          hovered |
-          looked |             look |             look |           looked |
-      helicopter |         helicopt |         helicopt |       helicopter |
-          stayed |             stay |             stay |           stayed |
-     disappeared |        disappear |        disappear |      disappeared |
-         appears |           appear |           appear |          appears |
-              us |               us |               us |                u |
-      consistent |          consist |          consist |       consistent |
-        sighting |            sight |            sight |         sighting |
-           venus |             venu |            venus |            venus |
-
-```
-
-We chose to stem the words with the Snowball Stemmer due to its preservation of important words for this usecase such as ‘venus’. The Snowball Stemmmer normalizes these words from its appeared form into their root form. We now have our list of clean tokens for each document! We turned this into a pandas Series to compute the TF-IDF
 
 ## Future Considerations
 
